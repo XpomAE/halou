@@ -1,0 +1,21 @@
+{
+ "version": "1.0.0",
+"main": "index.js",
+"scripts": {
+"test": "echo \"Error: no test specified\" && exit 1",
+"start": "node index.js"
+},
+"keywords": [
+"test",
+"heroku"
+],
+"author": "Xprom",
+"license": "MIT",
+"dependencies": {
+"node-telegram-bot-api": "^0.30.0"
+},
+"engines": {
+"node": "11.2.0",
+"npm": "6.5.0"
+}
+}
