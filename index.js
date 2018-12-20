@@ -10,7 +10,7 @@ port: process.env.PORT
 const bot = new TelegramBot(token, options);
 const url = "https://halou.herokuapp.com/:443";
 
-bot.setWebHook(${url}/bot${token});
+bot.setWebHook('${url}/bot${token}');
 
 	       
 bot.onText(/\/test/, function (msg) {
