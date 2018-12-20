@@ -16,3 +16,8 @@ bot.setWebHook('${url}/bot${token}');
 bot.onText(/\/test/, function (msg) {
 	bot.sendMessage(msg.chat.id,'Сам себя потести, уебок');
 });
+
+bot.onText(/\/a/, function (msg) {
+	bot.sendMessage(msg.chat.id,'Б');
+});
+
