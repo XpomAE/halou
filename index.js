@@ -33,3 +33,9 @@ bot.on('message', function (msg) {
 	bot.sendMessage(msg.chat.id,'Свою мамку попинай',{reply_to_message_id: msg.message_id});
 }
 });
+
+bot.on('message', function (msg) {
+	if(ex(msg.text,'кавай')){
+	bot.sendMessage(msg.chat.id,'гей',{reply_to_message_id: msg.message_id});
+}
+});
