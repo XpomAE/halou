@@ -23,6 +23,8 @@ bot.onText(/\/test/, function (msg) {
 bot.onText(/\/a/, function (msg) {
 	bot.sendMessage(msg.chat.id,'Б');
 });
-bot.onText(/Оплот для кого?/, function (msg) {
+bot.onText('message', function (msg) {
+	if(ex(msg.text,/оплот для кого?/{
 	bot.sendMessage(msg.chat.id,'Оплот для пидрил');
+}
 });
