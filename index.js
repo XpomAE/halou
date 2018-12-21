@@ -28,3 +28,7 @@ bot.on('message', function (msg) {
 	bot.sendMessage(msg.chat.id,'Оплот для пидрил',{reply_to_message_id: msg.message_id});
 }
 });
+
+bot.onText(/@prrrrrrbot/, function (msg) {
+	bot.sendMessage(msg.chat.id,'Свою мамку пинать будешь');
+});
