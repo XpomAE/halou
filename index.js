@@ -39,3 +39,12 @@ bot.on('message', function (msg) {
 	bot.sendMessage(msg.chat.id,'гей',{reply_to_message_id: msg.message_id});
 }
 });
+
+
+bot.onText(/\/ebu_sobak/, function (msg) {
+	bot.sendMessage(msg.chat.id,'Я ебу собак');
+	bot.sendMessage(msg.chat.id,'Всегда готов');
+	bot.sendMessage(msg.chat.id,'Сразу трахнуть несколько котов');
+	bot.sendMessage(msg.chat.id,'Да, я зоофил не говори');
+	bot.sendMessage(msg.chat.id,'Лучше мне собачку подари');
+});
