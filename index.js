@@ -12,6 +12,9 @@ const url = "https://halou.herokuapp.com/:443";
 
 bot.setWebHook(`${url}/bot${token}`);
 
+function ex(string,substring){
+if(string.toLowerCase().idexOf(sunstring) != -1){return true;}else{return false;}
+}
 	       
 bot.onText(/\/test/, function (msg) {
 	bot.sendMessage(msg.chat.id,'Сам себя потести, уебок');
