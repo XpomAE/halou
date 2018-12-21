@@ -9,18 +9,17 @@ port: process.env.PORT
 };
 const bot = new TelegramBot(token, options);
 const url = "https://halou.herokuapp.com/:443";
-////////
-////////////bot.setWebHook('${url}/bot${token}');
-///////////////////
-	       
-//////////////////////////////bot.onText(/\/test/, function (msg) {
-/////////////////////////////////	bot.sendMessage(msg.chat.id,'Сам себя потести, уебок');
-});/////////
 
-///////////////////////////////////////bot.onText(/\/a/, function (msg) {
-	//bot.sendMessage(msg.chat.id,'Б');
-});
-/////////////
-/////////////////////////////////////////////bot.onText(/Оплот для кого?/, function (msg) {
-	////////bot.sendMessage(msg.chat.id,'Оплот для пидрил');
-});
+bot.setWebHook('${url}/bot${token}');
+
+	       
+// bot.onText(/\/test/, function (msg) {
+// 	bot.sendMessage(msg.chat.id,'Сам себя потести, уебок');
+// });
+// bot.onText(/\/a/, function (msg) {
+// 	bot.sendMessage(msg.chat.id,'Б');
+// });
+
+// bot.onText(/Оплот для кого?/, function (msg) {
+// 	bot.sendMessage(msg.chat.id,'Оплот для пидрил');
+// });
