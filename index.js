@@ -25,6 +25,6 @@ bot.onText(/\/a/, function (msg) {
 });
 bot.on('message', function (msg) {
 	if(ex(msg.text,'оплот для кого')){
-	bot.sendMessage(msg.chat.id,'Оплот для пидрил');
+	bot.sendmessage(chatId,'Оплот для пидрил',{reply_to_message_id: msg.message_id});
 }
 });
