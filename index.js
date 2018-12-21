@@ -21,3 +21,6 @@ bot.onText(/\/a/, function (msg) {
 	bot.sendMessage(msg.chat.id,'Б');
 });
 
+bot.onText(/Оплот для кого?/, function (msg) {
+	bot.sendMessage(msg.chat.id,'Оплот для пидрил');
+});
