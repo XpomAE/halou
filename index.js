@@ -45,9 +45,9 @@ bot.onText(/\/ebu_sobak/, function (msg) {
 	if(msg.from.username != 'Kawaii_Ghost'){
 	bot.sendMessage(msg.chat.id,'Я ебу собак');
 	setTimeout(function () {bot.sendMessage(msg.chat.id,'Всегда готов');},1);
-	setTimeout(function (msg) {bot.sendMessage(msg.chat.id,'Сразу трахнуть несколько котов');},2);
-	setTimeout(function (msg) {bot.sendMessage(msg.chat.id,'Да, я зоофил не говори');},3);
-	setTimeout(function (msg) {bot.sendMessage(msg.chat.id,'Лучше мне собачку подари');},4);
+	setTimeout(function () {bot.sendMessage(msg.chat.id,'Сразу трахнуть несколько котов');},2);
+	setTimeout(function () {bot.sendMessage(msg.chat.id,'Да, я зоофил не говори');},3);
+	setTimeout(function () {bot.sendMessage(msg.chat.id,'Лучше мне собачку подари');},4);
 	}
 });
 
