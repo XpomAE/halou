@@ -26,25 +26,48 @@ bot.onText(/\/a/, function (msg) {
 bot.on('message', function (msg) {
 	if(ex(msg.text,'оплот для кого')){
 	bot.sendMessage(msg.chat.id,'Оплот для пидрил',{reply_to_message_id: msg.message_id});
-}
+	}
 });
 bot.on('message', function (msg) {
 	if(ex(msg.text,'@prrrrrrbot')){
 	bot.sendMessage(msg.chat.id,'Свою мамку попинай',{reply_to_message_id: msg.message_id});
-}
+	}
 });
 
 bot.on('message', function (msg) {
 	if(ex(msg.text,'кавай')){
 	bot.sendMessage(msg.chat.id,'гей',{reply_to_message_id: msg.message_id});
-}
+	}
 });
 
 
 bot.onText(/\/ebu_sobak/, function (msg) {
+	if(msg.from.username != 'Kawaii_Ghost'){
 	bot.sendMessage(msg.chat.id,'Я ебу собак');
 	bot.sendMessage(msg.chat.id,'Всегда готов');
 	bot.sendMessage(msg.chat.id,'Сразу трахнуть несколько котов');
 	bot.sendMessage(msg.chat.id,'Да, я зоофил не говори');
 	bot.sendMessage(msg.chat.id,'Лучше мне собачку подари');
+	}
 });
+
+bot.onText(/\/krokodil/, function (msg) {
+	bot.sendMessage(msg.chat.id,'Я крокодил');
+	bot.sendMessage(msg.chat.id,'Крокожу');
+	bot.sendMessage(msg.chat.id,'И буду крокодить');
+});	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
