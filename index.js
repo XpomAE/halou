@@ -34,13 +34,6 @@ bot.on('message', function (msg) {
 	}
 });
 
-bot.on('message', function (msg) {
-	if(ex(msg.text,'кавай')){
-	bot.sendMessage(msg.chat.id,'гей',{reply_to_message_id: msg.message_id});
-	}
-});
-
-
 bot.onText(/\/ebu_sobak/, function (msg) {
 	if(msg.from.username != 'Kawaii_Ghost'){
 	bot.sendMessage(msg.chat.id,'Я ебу собак');
