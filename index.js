@@ -44,10 +44,10 @@ bot.on('message', function (msg) {
 bot.onText(/\/ebu_sobak/, function (msg) {
 	if(msg.from.username != 'Kawaii_Ghost'){
 	bot.sendMessage(msg.chat.id,'Я ебу собак');
-	setTimeout(function () {bot.sendMessage(msg.chat.id,'Всегда готов');},2);
-	setTimeout(function () {bot.sendMessage(msg.chat.id,'Сразу трахнуть несколько котов');},4);
-	setTimeout(function () {bot.sendMessage(msg.chat.id,'Да, я зоофил не говори');},6);
-	setTimeout(function () {bot.sendMessage(msg.chat.id,'Лучше мне собачку подари');},8);
+	setTimeout(function () {bot.sendMessage(msg.chat.id,'Всегда готов');},20);
+	setTimeout(function () {bot.sendMessage(msg.chat.id,'Сразу трахнуть несколько котов');},40);
+	setTimeout(function () {bot.sendMessage(msg.chat.id,'Да, я зоофил не говори');},60);
+	setTimeout(function () {bot.sendMessage(msg.chat.id,'Лучше мне собачку подари');},80);
 	}
 });
 
