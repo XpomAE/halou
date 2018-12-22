@@ -52,9 +52,11 @@ bot.onText(/\/ebu_sobak/, function (msg) {
 });
 
 bot.onText(/\/krokodil/, function (msg) {
-	bot.sendMessage(msg.chat.id,'Я крокодил');
-	bot.sendMessage(msg.chat.id,'Крокожу');
-	bot.sendMessage(msg.chat.id,'И буду крокодить');
+	if(msg.from.username != 'Kawaii_Ghost'){
+	setTimeout(function () {bot.sendMessage(msg.chat.id,'Я крокодил');},1000);
+	setTimeout(function () {bot.sendMessage(msg.chat.id,'Крокожу');},2000);
+	setTimeout(function () {bot.sendMessage(msg.chat.id,'И буду крокодить');},3000);
+	}
 });	
 	
 	
