@@ -34,7 +34,7 @@ bot.on('message', function (msg) {
 	}
 });
 
-bot.onText(/\/ebu_sobak/, function (msg) {
+bot.onText(/\/ebu_sobak/, function (msg) { 
 	if(msg.from.username != 'Kawaii_Ghost'){
 	bot.sendMessage(msg.chat.id,'Я ебу собак');
 	setTimeout(function () {bot.sendMessage(msg.chat.id,'Всегда готов');},1000);
