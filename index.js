@@ -13,7 +13,7 @@ const url = "https://halou.herokuapp.com/:443";
 bot.setWebHook(`${url}/bot${token}`);
 
 function ex(string,substring){
-if(string.toLowerCase().indexOf(substring) != -1){return true;}else{return false;}
+if(string.toLowerCase(substring).indexOf(substring) != -1){return true;}else{return false;}
 }
 	       
 bot.onText(/\/test/, function (msg) {
