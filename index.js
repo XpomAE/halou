@@ -21,11 +21,15 @@ bot.onText(/\/test/, function (msg) {
 });
 
 bot.onText(/\/a/, function (msg) {
+	if(msg.text != undefined){
 	bot.sendMessage(msg.chat.id,'Б');
+	}
 });
 bot.on('message', function (msg) {
+	if(msg.text != undefined){
 	if(ex(msg.text,'оплот для кого')){
 	bot.sendMessage(msg.chat.id,'Оплот для пидрил',{reply_to_message_id: msg.message_id});
+	}
 	}
 });
 bot.on('message', function (msg) {
