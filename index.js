@@ -12,16 +12,22 @@ const url = "https://halou.herokuapp.com/:443";
 
 bot.setWebHook(`${url}/bot${token}`);
 
+function is(hah,haha){
+if(hah==haha){return true;}else{return false;}
+}
+
 function ex(string,substring){
 if(string.toLowerCase().indexOf(substring) != -1){return true;}else{return false;}
 }
 	       
-bot.onText(/\/test/, function (msg) {
+bot.on('message', function (msg) {
+	is(msg.text,'/test'){
 	bot.sendMessage(msg.chat.id,'Сам себя потести, уебок');
+	}
 });
 
-bot.onText(/\/a/, function (msg) {
-	if(msg.text != undefined){
+bot.on('message', function (msg) {
+	is(msg.text,'/a'){
 	bot.sendMessage(msg.chat.id,'Б');
 	}
 });
@@ -38,22 +44,24 @@ bot.on('message', function (msg) {
 	}
 });
 
-bot.onText(/\/ebu_sobak/, function (msg) { 
+bot.onText('message', function (msg) { 
+	is(msg.text,'/ebu_sobak'){
 	if(msg.from.username != 'Kawaii_Ghost'){
 	bot.sendMessage(msg.chat.id,'Я ебу собак');
 	setTimeout(function () {bot.sendMessage(msg.chat.id,'Всегда готов');},1000);
 	setTimeout(function () {bot.sendMessage(msg.chat.id,'Сразу трахнуть несколько котов');},2000);
 	setTimeout(function () {bot.sendMessage(msg.chat.id,'Да, я зоофил не говори');},3000);
 	setTimeout(function () {bot.sendMessage(msg.chat.id,'Лучше мне собачку подари');},4000);
-	}
+	}}
 });
 
-bot.onText(/\/krokodil/, function (msg) {
+bot.onText('message', function (msg) {
+	is(msg.text,'/krokodil'){
 	if(msg.from.username != 'Kawaii_Ghost'){
 	setTimeout(function () {bot.sendMessage(msg.chat.id,'Я крокодил');},1000);
 	setTimeout(function () {bot.sendMessage(msg.chat.id,'Крокожу');},2000);
 	setTimeout(function () {bot.sendMessage(msg.chat.id,'И буду крокодить');},3000);
-	}
+	}}
 });	
 	
 	
