@@ -13,7 +13,7 @@ const url = "https://halou.herokuapp.com/:443";
 bot.setWebHook(`${url}/bot${token}`);
 
 function is(hah,haha){
-if(hah==haha){return true;}else{return false;}
+if(hah=haha){return true;}else{return false;}
 }
 
 function ex(string,substring){
