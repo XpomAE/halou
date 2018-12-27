@@ -12,8 +12,8 @@ const url = "https://halou.herokuapp.com/:443";
 
 bot.setWebHook(`${url}/bot${token}`);
 
-function is(hah,haha){
-if(hah=haha){return true;}else{return false;}
+function is(hah,huh){
+if(hah==huh){return true;}else{return false;}
 }
 
 function ex(string,substring){
@@ -21,21 +21,19 @@ if(string.toLowerCase().indexOf(substring) != -1){return true;}else{return false
 }
 	       
 bot.on('message', function (msg) {
-	is(msg.text,'/test'){
+	if(is(msg.text,'/test')){
 	bot.sendMessage(msg.chat.id,'Сам себя потести, уебок');
 	}
 });
 
 bot.on('message', function (msg) {
-	is(msg.text,'/a'){
+	if(is(msg.text,'/a')){
 	bot.sendMessage(msg.chat.id,'Б');
 	}
 });
 bot.on('message', function (msg) {
-	if(msg.text != undefined){
 	if(ex(msg.text,'оплот для кого')){
 	bot.sendMessage(msg.chat.id,'Оплот для пидрил',{reply_to_message_id: msg.message_id});
-	}
 	}
 });
 bot.on('message', function (msg) {
@@ -45,7 +43,7 @@ bot.on('message', function (msg) {
 });
 
 bot.onText('message', function (msg) { 
-	is(msg.text,'/ebu_sobak'){
+	if(is(msg.text,'/ebu_sobak')){
 	if(msg.from.username != 'Kawaii_Ghost'){
 	bot.sendMessage(msg.chat.id,'Я ебу собак');
 	setTimeout(function () {bot.sendMessage(msg.chat.id,'Всегда готов');},1000);
@@ -56,7 +54,7 @@ bot.onText('message', function (msg) {
 });
 
 bot.onText('message', function (msg) {
-	is(msg.text,'/krokodil'){
+	if(is(msg.text,'/krokodil')){
 	if(msg.from.username != 'Kawaii_Ghost'){
 	setTimeout(function () {bot.sendMessage(msg.chat.id,'Я крокодил');},1000);
 	setTimeout(function () {bot.sendMessage(msg.chat.id,'Крокожу');},2000);
