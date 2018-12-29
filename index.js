@@ -21,13 +21,13 @@ if(string.toLowerCase().indexOf(substring) != -1){return true;}else{return false
 }
 	       
 bot.on('message', function (msg) {
-	if(is(msg.text,'/test')){
+	if(ex(msg.text,'/test')){
 	bot.sendMessage(msg.chat.id,'Сам себя потести, уебок');
 	}
 });
 
 bot.on('message', function (msg) {
-	if(is(msg.text,'/a')){
+	if(ex(msg.text,'/a')){
 	bot.sendMessage(msg.chat.id,'Б');
 	}
 });
@@ -43,7 +43,7 @@ bot.on('message', function (msg) {
 });
 
 bot.onText('message', function (msg) { 
-	if(is(msg.text,'/ebu_sobak')){
+	if(ex(msg.text,'/ebu_sobak')){
 	if(msg.from.username != 'Kawaii_Ghost'){
 	bot.sendMessage(msg.chat.id,'Я ебу собак');
 	setTimeout(function () {bot.sendMessage(msg.chat.id,'Всегда готов');},1000);
@@ -54,7 +54,7 @@ bot.onText('message', function (msg) {
 });
 
 bot.onText('message', function (msg) {
-	if(is(msg.text,'/krokodil')){
+	if(ex(msg.text,'/krokodil')){
 	if(msg.from.username != 'Kawaii_Ghost'){
 	setTimeout(function () {bot.sendMessage(msg.chat.id,'Я крокодил');},1000);
 	setTimeout(function () {bot.sendMessage(msg.chat.id,'Крокожу');},2000);
